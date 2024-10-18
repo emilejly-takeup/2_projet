@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo-container {
+    width: 161px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    width: 61px;
+    height: 19px;
+}
+
+.menu {
+    width: 344px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-buttons-container {
+    width: 244px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-button {
+    border: none;
+    background-color: transparent;
+    height: 33px;
+    margin-top: 2px;
+    display: flex;
+    align-items: end;
+}
+
+.menu-button:hover {
+    margin-top: 0;
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+}
