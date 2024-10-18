@@ -1,48 +1,32 @@
 header {
-    width: 100%;
+    display: flex;
     height: 79px;
-    display: flex;
     justify-content: space-between;
-}
-
-.header-logo-container {
-    width: 161px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0 50px;
+    align-items: stretch;
 }
 
 .header-logo {
     width: 61px;
     height: 19px;
+    align-self: center;
 }
 
-.menu {
-    width: 344px;
-    height: 35px;
+.menu-container {
+    height: 33px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 68px;
 }
 
-.menu-buttons-container {
-    width: 244px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-button {
+.menu-link {
     border: none;
     background-color: transparent;
-    height: 33px;
     margin-top: 2px;
     display: flex;
     align-items: end;
 }
 
-.menu-button:hover {
+.menu-link:hover {
     margin-top: 0;
     border-top: 2px solid var(--main-color);
     color: var(--main-color);

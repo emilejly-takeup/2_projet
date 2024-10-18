@@ -20,17 +20,14 @@
     <body>
         <div class="main-container">
             <header>
-                <div class="header-logo-container">
-                    <img class="header-logo" src="./images/logo/Booki.png" alt="Logo de Booki" />
-                </div>
-                <div class="menu">
-                    <nav class="menu-buttons-container">
-                        <!-- TODO: Ajouter les liens vers les sections correspondantes -->
-                        <a href="#" id="hebergements-button" class="menu-button">Hébergements</a>
-                        <a href="#" class="menu-button">Activités</a>
-                    </nav>
-                </div>
+                <img class="header-logo" src="./images/logo/Booki.png" alt="Logo de Booki" />
+                <nav class="menu-container">
+                    <!-- TODO: Ajouter les liens vers les sections correspondantes -->
+                    <a href="#" class="menu-link">Hébergements</a>
+                    <a href="#" class="menu-link">Activités</a>
+                </nav>
             </header>
+
             <main>
                 <div class="info-group-container">
                     <div class="headline">
@@ -41,35 +38,27 @@
                         <button id="search-bar-location-button" type="button">
                             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                         </button>
-                        <input type="text" placeholder="Marseille, France" />
+                        <input type="text" placeholder="Rechecher..." value="Marseille, France" />
                         <button id="search-bar-submit-button" type="submit">Rechercher</button>
                     </form>
                     <div class="filter-bar">
                         <p>Filtrer</p>
-                        <div class="filter-container">
-                            <div class="filter-content">
-                                <i class="fa-solid fa-money-bill-wave"></i>
-                                <span>Économique</span>
-                            </div>
-                        </div>
-                        <div class="filter-container">
-                            <div class="filter-content">
-                                <i class="fa-solid fa-person"></i>
-                                <span>Familial</span>
-                            </div>
-                        </div>
-                        <div class="filter-container">
-                            <div class="filter-content">
-                                <i class="fa-solid fa-heart"></i>
-                                <span>Romantique</span>
-                            </div>
-                        </div>
-                        <div class="filter-container">
-                            <div class="filter-content">
-                                <i class="fa-solid fa-fire"></i>
-                                <span>Nos pépites</span>
-                            </div>
-                        </div>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </button>
+                        <button class="filter-button">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Nos pépites</span>
+                        </button>
                     </div>
                     <div class="info-bar">
                         <div class="info-icon-container">
@@ -78,6 +67,7 @@
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </div>
+
                 <div class="hebergements-and-populaires">
                     <section class="hebergements"></section>
                     <section class="populaires">
