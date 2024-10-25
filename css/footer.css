@@ -27,4 +27,18 @@ footer h3 {
 }
 
 @media (max-width: 768px) {
+    footer {
+        margin: 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+    }
+
+    .footer-list {
+        padding: 0;
+    }
 }

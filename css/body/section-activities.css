@@ -42,4 +42,13 @@
 }
 
 @media (max-width: 768px) {
+    .activites-cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .activity-card img {
+        height: 141px;
+    }
 }

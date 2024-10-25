@@ -53,11 +53,20 @@
 }
 
 #search-bar-submit-button {
-    border: 1px solid var(--main-color);
+    border: none;
     background-color: var(--main-color);
-    padding: 13px 15px;
+    padding: 15px 16px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    color: white;
+}
+
+#search-bar-submit-button:before {
+    content: "Rechercher";
+}
+
+#search-bar-submit-button i {
+    display: none;
     color: white;
 }
 
@@ -89,7 +98,7 @@
     font-size: 17px;
     font-weight: 700;
     background-color: transparent;
-    border: 2px solid var(--main-bg-color);
+    border: 2px solid #d9d9d9;
     border-radius: 25px;
     padding: 4px 17px;
 }
@@ -117,9 +126,9 @@
 
 .info-icon-container {
     border: 1px solid var(--main-bg-color);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,4 +153,66 @@
 }
 
 @media (max-width: 768px) {
+    .info-group-container {
+        padding: 0 20px;
+    }
+
+    .search-bar-form {
+        position: relative;
+        max-width: 335px;
+    }
+
+    .search-bar-form input {
+        max-width: 70%;
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    #search-bar-submit-button {
+        border-radius: 15px;
+        position: absolute;
+        right: 0;
+        height: 49px;
+        width: 49px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    #search-bar-submit-button:before {
+        content: "";
+    }
+
+    #search-bar-submit-button i {
+        display: block;
+    }
+
+    .filter-bar {
+        height: 161px;
+        justify-content: space-between;
+        align-items: normal;
+    }
+
+    .filter-button-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        row-gap: 20px;
+        height: fit-content;
+    }
+
+    .filter-button {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        width: 162.5px;
+        height: 49px;
+    }
+
+    .info-bar {
+        height: 38px;
+    }
+
+    .info-bar p {
+        max-width: 301px;
+    }
 }

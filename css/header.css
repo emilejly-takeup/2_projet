@@ -36,4 +36,32 @@ header {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .header-logo {
+        padding: 30px;
+    }
+
+    .menu-container {
+        gap: 0;
+    }
+
+    .menu-link {
+        margin-top: 0;
+        margin-bottom: 2px;
+        height: 36px;
+        width: 100%;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .menu-link:hover {
+        margin-bottom: 0;
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
 }
