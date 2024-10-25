@@ -48,6 +48,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
