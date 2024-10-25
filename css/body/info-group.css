@@ -11,7 +11,7 @@
     gap: 8px;
 }
 
-.headline h2 {
+.headline h1 {
     font-size: 22px;
 }
 
@@ -77,7 +77,7 @@
     gap: 15px;
 }
 
-.filter-bar p {
+.filter-bar h2 {
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -187,14 +187,15 @@
     }
 
     .filter-bar {
-        height: 161px;
+        height: fit-content;
         justify-content: space-between;
         align-items: normal;
     }
 
     .filter-button-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 335px;
         gap: 10px;
         row-gap: 20px;
         height: fit-content;
