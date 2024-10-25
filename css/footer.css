@@ -2,6 +2,10 @@ footer {
     margin: 0 50px;
 }
 
+footer h3 {
+    font-size: 18px;
+}
+
 .footer-container {
     background-color: var(--main-bg-color);
     width: 100%;
@@ -17,7 +21,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .footer-container {
+        gap: 30px;
+    }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 }

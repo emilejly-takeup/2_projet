@@ -66,13 +66,20 @@
     display: flex;
     align-items: stretch;
     gap: 15px;
-    font-size: 18px;
-    font-weight: 700;
 }
 
 .filter-bar p {
     display: flex;
     align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter-button-container {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .filter-button {
@@ -120,7 +127,21 @@
 }
 
 @media (max-width: 1024px) {
+    .filter-bar {
+        gap: 20px;
+        height: 90px;
+        flex-direction: column;
+    }
+
+    .filter-button-container {
+        gap: 20px;
+        height: 50px;
+    }
+
+    .filter-button {
+        font-size: 16px;
+    }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 }
