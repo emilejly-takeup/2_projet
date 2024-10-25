@@ -30,3 +30,9 @@
 .activity-card .card-title {
     padding: 20px 19px;
 }
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 767.98px) {
+}
